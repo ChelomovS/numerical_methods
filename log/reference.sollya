@@ -1,0 +1,25 @@
+prec = 256!;
+k = 8;
+interval = [-2^(-k); 2^(-k)];
+
+p = fpminimax(log(1+x), [|1, 2, 3, 4, 5|], [|D, D, D, D, D|], interval);
+
+filename = "logf_coeffs.h";
+write("") > filename;
+
+write("#pragma once\n") >> filename;
+
+display = hexadecimal!; 
+write("#define LOGF_LN2  ", double(log(2)), "\n\n") >> filename;
+
+display = decimal!; 
+write("const float LOGF_POLY_COEFF[", 5, "] = {\n") >> filename;
+
+display = hexadecimal!; 
+for i from 1 to 5 do {
+    write("    ", coeff(p,i)) >> filename;
+    if i < 5 then write(",\n") >> filename else write("\n") >> filename;
+};
+write("};\n") >> filename;
+
+quit;

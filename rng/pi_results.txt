@@ -1,0 +1,7 @@
+[Monte carlo report | Library: PCG]
+Calculated Pi: 3.141604680000000
+Reference Pi:  3.141592653589793
+Abs Error:     1.202641020681128e-05
+3-Sigma Limit: 0.000492655010321
+Result is statistically valid (within 3 sigma).
+3.141604680000000

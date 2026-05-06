@@ -1,0 +1,4 @@
+*.out
+build
+venv
+numerics_in_finance

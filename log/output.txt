@@ -1,0 +1,28 @@
+--- All Denormal numbers [0x00000001-0x007FFFFF] ---
+Tested: 8388607
+Errors (>3.5 ULP): 0
+Max ULP: 0.536576 (x = 5.13976659e-40, hex = 0x000598C2)
+
+--- Smallest normalized numbers [0x00800000-0x01000000] ---
+Tested: 8388609
+Errors (>3.5 ULP): 0
+Max ULP: 0.535313 (x = 1.64493943e-38, hex = 0x00B31E38)
+
+--- Numbers in [0.25, 1.0) [0x3E800000-0x3F7FFFFF] ---
+Tested: 16777216
+Errors (>3.5 ULP): 0
+Max ULP: 1.477018 (x = 0.992237091, hex = 0x3F7E0340)
+
+--- Numbers in [1.0, 4.0) [0x3F800000-0x407FFFFF] ---
+Tested: 16777216
+Errors (>3.5 ULP): 0
+Max ULP: 1.583125 (x = 1.03141999, hex = 0x3F840592)
+
+--- Large numbers near MAX_FLOAT [0x7F000000-0x7F7FFFFF] ---
+Tested: 8388608
+Errors (>3.5 ULP): 0
+Max ULP: 0.535714 (x = 2.64494061e+38, hex = 0x7F46FBB4)
+
+
+Total points with >3.5 ULP error: 0
+Global Max ULP: 1.583125 (x = 1.03141999, hex = 0x3F840592)
