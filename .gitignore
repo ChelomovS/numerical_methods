@@ -2,3 +2,4 @@
 build
 venv
 numerics_in_finance
+.DS_Store
